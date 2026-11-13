@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #292a35;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+
+.nav-btn {
+  background: #ff663d;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/* COURSES */
+
+.courses {
+  padding: 70px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title p {
+  color: #ff6645;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.categories a {
+  color: #777;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.categories a:first-child {
+  color: #ff6545;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.course-card {
+  background: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.img-box {
+  width: 100%;
+  height: 160px;
+  background: #ffd52d;
+  /* Rasm qo'yish uchun:
+    background-image: url("images/course1.jpg");
+    background-size: cover;
+    background-position: center;
+    */
+}
+
+.course-info {
+  padding: 15px;
+}
+
+.course-info span {
+  color: #ff6845;
+  font-size: 11px;
+}
+
+.course-info h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.course-info p {
+  font-size: 11px;
+  color: #888;
+}
+
+.view-more {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.view-more a {
+  color: #777;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* TESTIMONIAL */
+
+.testimonial {
+  background: #f7f7f8;
+  padding: 65px 0;
+}
+
+.testimonial-card {
+  background: white;
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04);
+}
+
+.quote {
+  color: #ff6245;
+  font-size: 35px;
+}
+
+.testimonial-card > p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.student {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.student-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffd52d;
+}
+
+.student h4 {
+  font-size: 13px;
+}
+
+.student small {
+  font-size: 11px;
+  color: #999;
+}
+
+/* CERTIFICATE */
+
+.certificate {
+  padding: 70px 0;
+}
+
+.certificate-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.certificate-text {
+  flex: 1;
+}
+
+.certificate-text > p:first-child {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.certificate-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.certificate-text p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.certificate-text a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #20b58b;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.certificate-img {
+  flex: 1;
+  height: 220px;
+  background: #f1f1f1;
+  /* Rasm qo'yish:
+    background-image: url("images/certificate.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    */
+}
+
+/* SUBSCRIBE */
+
+.subscribe {
+  background: #ffdad3;
+  padding: 55px 0;
+  text-align: center;
+}
+
+.subscribe > .container > p {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.subscribe h2 {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.subscribe form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.subscribe input {
+  width: 280px;
+  padding: 13px;
+  border: none;
+  outline: none;
+}
+
+.subscribe button {
+  background: #ff6645;
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #20212c;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer p,
+.footer a {
+  color: #aaa;
+  font-size: 11px;
+  line-height: 2;
+}
+
+.footer a {
+  display: block;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .img-box {
+    height: 130px;
+  }
+
+  .certificate-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .certificate-img {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 23px;
+  }
+
+  .subscribe h2 {
+    font-size: 20px;
+  }
+
+  .subscribe form {
+    flex-direction: column;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
